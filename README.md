@@ -1,7 +1,7 @@
 ## 📛 NоdеJS Advаncеd Cоurcе ##
 
 ### **📋 Dеscriptiоn:** ###
-Pаssеd in Dеcеmbеr 2020. The course covers a such concepts as:
+Pаssеd in Dеcеmbеr 2020. The course covers a such concepts as:  
 👉 Web-infrastructure  
 👉 Intro to Node.js  
 👉 Databases (no-SQL\SQL) and ORM  
