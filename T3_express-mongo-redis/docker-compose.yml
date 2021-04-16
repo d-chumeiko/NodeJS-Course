@@ -1,0 +1,15 @@
+version: "3"
+services:
+  redis-server: 
+    image: 'redis'
+  my-node:
+    build: ./node
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+      - "9222:9222"
+    tty: true
+  

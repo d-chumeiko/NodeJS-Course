@@ -1,0 +1,3 @@
+- To start project: docker-compose up --build
+- I added 'NodeJs Task2.postman_collection.json' to simplify you checking endpoints and working capacity of the code. So you can import this to your Postman :)
+- All requirements were realized

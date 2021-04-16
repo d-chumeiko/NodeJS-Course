@@ -1,0 +1,18 @@
+{
+  "name": "mongo_db_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L --inspect=0.0.0.0:9222 src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongodb": "^3.6.3",
+    "nodemon": "^2.0.6",
+    "redis": "^3.0.2"
+  }
+}
