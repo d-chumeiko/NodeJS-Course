@@ -1,0 +1,53 @@
+{
+  "name": "frameworks-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -L --inspect=0.0.0.0:9222 index.js",
+    "start-express": "node express/index.js",
+    "start-koa": "node koa/index.js",
+    "start-hapi": "node hapi/index.js",
+    "migrate": "sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skrpk/frameworks-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skrpk/frameworks-examples/issues"
+  },
+  "homepage": "https://github.com/Skrpk/frameworks-examples#readme",
+  "dependencies": {
+    "@hapi/basic": "^6.0.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/joi": "^17.1.1",
+    "await": "^0.2.6",
+    "body-parser": "^1.19.0",
+    "bottlejs": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "express-winston": "^4.0.3",
+    "hapi": "^18.1.0",
+    "hapi-auth-jwt2": "^10.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-async-validator": "^0.4.1",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^8.0.8",
+    "koa-validate": "^1.0.7",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

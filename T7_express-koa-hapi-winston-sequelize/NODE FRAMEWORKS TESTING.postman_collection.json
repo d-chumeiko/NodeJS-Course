@@ -1,0 +1,194 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NODE FRAMEWORKS TESTING",
+		"_postman_id": "886c8724-f88a-9f26-05b7-6323c2594cb8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"description": "login and sign up",
+			"item": [
+				{
+					"name": "http://localhost:3000/auth/login",
+					"request": {
+						"url": "http://localhost:{{PORT}}/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHVzZXIuY29tIiwidXNlcklkIjoiYzIxMGU2ZDktMTRjYS00Yzk5LWIzZTItMmZlZDI2MGJjYTdiIiwiaWF0IjoxNTg4MTYwMjc0LCJleHAiOjE1ODgxNjM4NzR9.JBnuWnIiOzXF2hQwi2XCCVQhUvYeFJN2Zo-Aidqg-qM",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test1@tuser.com\",\n\t\"password\": \"QWEqwe123\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/auth/signup",
+					"request": {
+						"url": "http://localhost:{{PORT}}/auth/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test1@tuser.com\",\n\t\"password\": \"QWEqwe123\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/events",
+					"request": {
+						"url": "http://localhost:{{PORT}}/events",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:{{PORT}}/events",
+					"request": {
+						"url": "http://localhost:{{PORT}}/events",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer --PUT_TOKEN_HERE--",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"First event\",\n\t\"description\": \"Event description\",\n\t\"price\": 22,\n\t\"date\": \"05-05-2020\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:{{PORT}}/bookings",
+					"request": {
+						"url": "http://localhost:{{PORT}}/bookings",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer --PUT_TOKEN_HERE--",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:{{PORT}}/bookings",
+					"request": {
+						"url": "http://localhost:{{PORT}}/bookings",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer --PUT_TOKEN_HERE--",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"eventId\": \"EVENT_ID\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:{{PORT}}/bookings",
+					"request": {
+						"url": "http://localhost:{{PORT}}/bookings",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer --PUT_TOKEN_HERE--",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\": \"BOOKING_ID\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

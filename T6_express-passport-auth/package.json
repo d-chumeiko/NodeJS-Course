@@ -1,0 +1,24 @@
+{
+  "name": "task6_app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -L src/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
